@@ -1,0 +1,73 @@
+/* Main container */
+/* Ensure full viewport height without overflow */
+.container {
+  height: 100%; /* Set fixed height to full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden; /* Prevents extra scrolling */
+}
+
+
+/* Title (Centered) */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid Layout for Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Weather Card Styling */
+.weather-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Card Title Styling */
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 8px;
+}
+
+/* Card Text Styling */
+.card-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  gap: 6px;
+}
+
+/* Icon Colors */
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sun-icon {
+  color: #ffcc00;
+}
+
+.calendar-icon {
+  color: #007bff;
+}
+
+.temp-icon {
+  color: #e63946;
+}
